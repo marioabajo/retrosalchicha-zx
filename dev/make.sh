@@ -1,5 +1,5 @@
 #!/bin/bash
-NAME=
+NAME=retrosalchicha
 echo -e "\e[32mCompilando $NAME"
 echo -e "Compilando script\e[0m"
 cd ../script
