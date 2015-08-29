@@ -1,0 +1,3 @@
+#!/bin/bash
+
+wine $churrerapath/utils/Mappy/mapwin.exe $*
