@@ -6,6 +6,8 @@ then
 	aux=$( realpath $0 )
 	export churrerapath=${aux%/$0}/$(dirname $called)
 	export PATH=$PATH:$churrerapath/utils
+	echo "Utilities now available in the path:"
+	find $churrerapath/utils -executable -type f -printf " - %f\n"
 	PS1='\[\033[01;32m\]\u@\[\033[01;33m\]churrera\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
 fi
 
