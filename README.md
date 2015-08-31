@@ -1,5 +1,18 @@
 # retrosalchicha-zx
 
+Pasos para hacer nuestro juego
+==============================
+
+![Animo](http://img.desmotivaciones.es/201012/j_74.jpg)
+
+1. Hacemos un tileset
+2. Hacemos los sprites
+3. Hacemos un mapa interesante
+4. Scripting
+5. Le ponemos unas pantallas de carga y final bonitas
+
+![y listo](http://img.desmotivaciones.es/201012/havona_cat.jpg)
+
 Compilacion (linux)
 ====================
 
