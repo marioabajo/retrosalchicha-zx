@@ -5,15 +5,25 @@ echo -e "Compilando script\e[0m"
 cd ../script
 wine msc $NAME.spt msc.h 24
 cp *.h ../dev
+
 echo -e "\e[32mRegenerando mapa\e[0m"
 cd ../map
-mapcnv mapa.map 8 3 15 10 15 packed
+mapcnv mapa.MAP 2 2 15 10 15 packed
 cp -f mapa.h ../dev
+
+echo -e "\e[32mRegenerando screens\e[0m"
+cd ../gfx
+apack loading.scr loading.bin
+apack title.scr title.bin
+apack ending.scr ending.bin
+apack marco.scr marco.bin
+mv loading.bin title.bin ending.bin marco.bin ../dev
+
 echo -e "\e[32mCompilando juego\e[0m"
 cd ../dev
 zcc +zx -vn $NAME.c -o $NAME.bin -lndos -lsplib2 -zorg=24200
 echo -e "\e[32mCreando la cinta\e[0m"
-MAYUS=echo $NAME | tr '[:lower:]' '[:upper:]'
+MAYUS=$(echo $NAME | tr '[:lower:]' '[:upper:]' | cut -c -8)
 bas2tap -a10 -s${MAYUS} loader.bas loader.tap
 bin2tap -o screen.tap -a 16384 loading.bin
 bin2tap -o main.tap -a 24200 $NAME.bin

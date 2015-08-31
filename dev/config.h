@@ -10,18 +10,18 @@
 
 // In this section we define map dimmensions, initial and authomatic ending conditions, etc.
 
-#define MAP_W					5		//
-#define MAP_H					5		// Map dimmensions in screens
-#define SCR_INICIO				99		// Initial screen
-#define PLAYER_INI_X			99		//
-#define PLAYER_INI_Y			99		// Initial tile coordinates
+#define MAP_W					2		//
+#define MAP_H					2		// Map dimmensions in screens
+#define SCR_INICIO				0		// Initial screen
+#define PLAYER_INI_X			32		//
+#define PLAYER_INI_Y			32		// Initial tile coordinates
 #define SCR_FIN 				99		// Last screen. 99 = deactivated.
 #define PLAYER_FIN_X			99		//
 #define PLAYER_FIN_Y			99		// Player tile coordinates to finish game
 #define PLAYER_NUM_OBJETOS		99		// Objects to get to finish game
 #define PLAYER_LIFE 			9		// Max and starting life gauge.
 #define PLAYER_REFILL			1		// Life recharge
-#define COMPRESSED_LEVELS				// use levels.h instead of mapa.h and enems.h (!)
+//#define COMPRESSED_LEVELS				// use levels.h instead of mapa.h and enems.h (!)
 #define MAX_LEVELS			4			// # of compressed levels
 #define REFILL_ME						// If defined, refill player on each level
 
@@ -47,17 +47,17 @@
 #define PLAYER_AUTO_CHANGE_SCREEN		// Player changes screen automaticly (no need to press direction)
 #define PLAYER_CHECK_MAP_BOUNDARIES		// If defined, you can't exit the map.
 #define DIRECT_TO_PLAY					// If defined, title screen is also the game frame.
-#define DEACTIVATE_KEYS					// If defined, keys are not present.
-#define DEACTIVATE_OBJECTS				// If defined, objects are not present.
+//#define DEACTIVATE_KEYS					// If defined, keys are not present.
+//#define DEACTIVATE_OBJECTS				// If defined, objects are not present.
 //#define ONLY_ONE_OBJECT				// If defined, only one object can be carried at a time.
 //#define OBJECT_COUNT			1		// Defines which FLAG will be used to store the object count.
 //#define DEACTIVATE_EVIL_TILE			// If defined, no killing tiles (behaviour 1) are detected.
 #define FULL_BOUNCE						// If defined, evil tile bounces equal MAX_VX, otherwise v/2
-//#define PLAYER_BOUNCES				// If defined, collisions make player bounce
+#define PLAYER_BOUNCES				// If defined, collisions make player bounce
 //#define SLOW_DRAIN					// Works with bounces. Drain is 4 times slower
-#define PLAYER_FLICKERS 			 	// If defined, collisions make player flicker instead.
+//#define PLAYER_FLICKERS 			 	// If defined, collisions make player flicker instead.
 //#define MAP_BOTTOM_KILLS				// If defined, exiting the map bottomwise kills.
-//#define WALLS_STOP_ENEMIES			// If defined, enemies react to the scenary
+#define WALLS_STOP_ENEMIES			// If defined, enemies react to the scenary
 //#define EVERYTHING_IS_A_WALL			// If defined, any tile <> type 0 is a wall, otherwise just 8.
 //#define ENABLE_PURSUERS				// If defined, type 7 enemies are active
 //#define DEATH_COUNT_EXPRESSION	20+(rand()&15)
@@ -133,13 +133,13 @@
 // Top view:
 // ---------
 
-//#define PLAYER_MOGGY_STYLE				// Enable top view.
+#define PLAYER_MOGGY_STYLE				// Enable top view.
 //#define TOP_OVER_SIDE					// UP/DOWN has priority over LEFT/RIGHT
 
 // Side view:
 // ----------
 
-#define PLAYER_HAS_JUMP               	// If defined, player is able to jump.
+//#define PLAYER_HAS_JUMP               	// If defined, player is able to jump.
 //#define PLAYER_HAS_JETPAC             // If defined, player can thrust a vertical jetpac
 //#define PLAYER_KILLS_ENEMIES          // If defined, stepping on enemies kills them
 //#define PLAYER_MIN_KILLABLE     3     // Only kill enemies with id >= PLAYER_MIN_KILLABLE
@@ -180,7 +180,7 @@
 
 // Graphic FX, uncomment which applies...
 
-//#define USE_AUTO_SHADOWS				// Automatic shadows made of darker attributes
+#define USE_AUTO_SHADOWS				// Automatic shadows made of darker attributes
 #define USE_AUTO_TILE_SHADOWS			// Automatic shadows using specially defined tiles 32-47.
 //#define UNPACKED_MAP					// Full, uncompressed maps. Shadows settings are ignored.
 //#define NO_MASKS						// Sprites are rendered using OR instead of masks.
