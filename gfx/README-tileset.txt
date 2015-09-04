@@ -9,7 +9,9 @@ Pasos para crear/modificar el tileset:
      caracteres que necesitamos y debajo el contenido de tileset-udgs.png y lo
      guardamos como tileset.png
  4 - Abrimos SevenuP e importamos la imagen tileset.png. Cambiamos en las 
-     "output options" -> "Byte sort priority" y ponemos "Charline" arriba.
+     "output options" -> "Byte sort priority" y ponemos "Charline" arriba e 
+     "interleave" a "Sprite".
      Guardamos como fichero ".c" y nombre "tileset.h" (renombrar despues a 
      "tileset.h")
+     Editamos tileset.h en linea 249 cambiamos los 4 primeros numeros "0" a "7"
  5 - Mover tileset.h al directorio dev
