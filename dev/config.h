@@ -22,7 +22,7 @@
 #define PLAYER_LIFE 			9		// Max and starting life gauge.
 #define PLAYER_REFILL			1		// Life recharge
 //#define COMPRESSED_LEVELS				// use levels.h instead of mapa.h and enems.h (!)
-#define MAX_LEVELS			4			// # of compressed levels
+#define MAX_LEVELS			1			// # of compressed levels
 #define REFILL_ME						// If defined, refill player on each level
 
 // ============================================================================
@@ -46,7 +46,7 @@
 
 #define PLAYER_AUTO_CHANGE_SCREEN		// Player changes screen automaticly (no need to press direction)
 #define PLAYER_CHECK_MAP_BOUNDARIES		// If defined, you can't exit the map.
-#define DIRECT_TO_PLAY					// If defined, title screen is also the game frame.
+//#define DIRECT_TO_PLAY					// If defined, title screen is also the game frame.
 //#define DEACTIVATE_KEYS					// If defined, keys are not present.
 //#define DEACTIVATE_OBJECTS				// If defined, objects are not present.
 //#define ONLY_ONE_OBJECT				// If defined, only one object can be carried at a time.
@@ -185,8 +185,8 @@
 //#define UNPACKED_MAP					// Full, uncompressed maps. Shadows settings are ignored.
 //#define NO_MASKS						// Sprites are rendered using OR instead of masks.
 //#define PLAYER_ALTERNATE_ANIMATION	// If defined, animation is 1,2,3,1,2,3... 
-#define MASKED_BULLETS					// If needed
-//#define ENABLE_TILANIMS			32	// If defined, animated tiles are enabled.
+//#define MASKED_BULLETS					// If needed
+#define ENABLE_TILANIMS			32	// If defined, animated tiles are enabled.
 										// the value especifies firt animated tile pair.
 #define PAUSE_ABORT						// Add h=PAUSE, y=ABORT
 //#define GET_X_MORE					// Shows "get X more" when getting an object
